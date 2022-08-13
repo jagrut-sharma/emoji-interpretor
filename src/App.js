@@ -27,10 +27,18 @@ export default function App() {
 
     if (meaning === undefined) {
       setTextChange("Sorry! " + userInput + " is not in our database");
-    } else if (meaning === "Please enter an emoji") {
-      setTextChange(meaning);
     } else {
       setTextChange(meaning);
+    }
+  }
+
+  function clickHandler(emoji) {
+    const meaning = emojiDictionary[emoji];
+
+    if (meaning === undefined) {
+      setTextChange("Sorry! " + emoji + " is not in our database");
+    } else {
+      setTextChange(emoji + " means " + meaning);
     }
   }
 
@@ -39,7 +47,7 @@ export default function App() {
       <h1> Emoji Interpretor </h1>
       <input
         type="text"
-        style={{ width: "80%", padding: "1rem" }}
+        style={{ width: "80%", padding: "1rem", fontSize: "1.5rem" }}
         onChange={changeHandler}
       />
       <p style={{ fontSize: "1.5rem" }}> {textChange} </p>
@@ -50,6 +58,7 @@ export default function App() {
             padding: "1rem 0.5rem",
             cursor: "pointer"
           }}
+          onClick={() => clickHandler(emoji)}
           key={emoji}
         >
           {emoji}
