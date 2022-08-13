@@ -3,16 +3,16 @@ import React, { useState } from "react";
 
 const emojiDictionary = {
   "😀": "Grinning/Smiley Face",
-  "😅": "Anxiety while laughing",
+  "😅": "a little anxiety while laughing",
   "🖖": "Vulcan Salute",
   "😂": "Laughing very hard",
-  "🤣": "Laughing very hard",
+  "🤣": "Rolling on the floor while laughing",
   "🤑": "Money mouth",
   "🤤": "Drooling",
   "👍": "Thumbs up",
   "✌️": "Victory/Peace",
   "❤️": "Heart, used to send to your loved ones",
-  "😍": "used to indicate your love something",
+  "😍": "used to indicate you love/like something",
   "": "Please enter an emoji"
 };
 
