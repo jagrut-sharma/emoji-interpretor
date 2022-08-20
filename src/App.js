@@ -45,6 +45,7 @@ export default function App() {
   return (
     <div className="App">
       <h1> Emoji Interpretor </h1>
+      <p>Enter an emoji or click one to know its meaning</p>
       <input
         type="text"
         style={{ width: "80%", padding: "1rem", fontSize: "1.5rem" }}
